@@ -8,6 +8,8 @@ const {
 // Message Routes
 const messageRoute = express.Router();
 
-messageRoute.post("/", addMessage).get("/", getMessage).put("/", updateMessage);
+messageRoute.post("/", addMessage);
+messageRoute.get("/", getMessage);
+messageRoute.put("/", updateMessage);
 
 module.exports = messageRoute;

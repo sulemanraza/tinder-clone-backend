@@ -9,11 +9,11 @@ dotenv.config("./.env");
 mongoose.connect(process.env.MONGODB_URL, () => {
   try {
     console.log("db Connect!");
+    const PORT = process.env.PORT || 8000;
+    server.listen(PORT, () =>
+      console.log(`Example app listening on port http://localhost:${PORT}`)
+    );
   } catch (error) {
     console.log(error);
   }
 });
-const PORT = process.env.PORT || 8000;
-server.listen(PORT, () =>
-  console.log(`Example app listening on port http://locahost:${PORT}!`)
-);

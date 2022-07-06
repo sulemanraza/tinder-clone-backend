@@ -11,12 +11,11 @@ const {
 // user Routes
 const userRoute = express.Router();
 
-userRoute
-  .get("/", getUser)
-  .post("/matches", getMatchesUser)
-  .post("/signup", signupUser)
-  .post("/login", LoginUser)
-  .put("/", updateUser)
-  .put("/add-match", updateUserMatch);
+userRoute.get("/", getUser);
+userRoute.post("/matches", getMatchesUser);
+userRoute.post("/signup", signupUser);
+userRoute.post("/login", LoginUser);
+userRoute.put("/", updateUser);
+userRoute.put("/add-match", updateUserMatch);
 
 module.exports = userRoute;

@@ -7,6 +7,10 @@
     "server": "nodemon server.js",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sulemanraza/tinder-clone-backend"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
